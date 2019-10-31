@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "nama": "Rinjani",
+        "lokasi": "Lombok",
+        "foto": "rinjani.jpg"
+    },
+    {
+        "id": "2",
+        "nama": "Bromo",
+        "lokasi": "Jawa timur",
+        "foto": "bromo.jpg"
+    },
+    {
+        "id": "3",
+        "nama": "Kawah Putih",
+        "lokasi": "Bandung",
+        "foto": "kawahijen.jpg"
+    }
+]

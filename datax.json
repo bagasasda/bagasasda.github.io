@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "nama": "Adiinda Thomas",
+        "email": "thomasAdinda@gmail.com",
+        "foto": "1a.jpg"
+    },
+    {
+        "id": "2",
+        "nama": "Syahrul Gunawan",
+        "email": "syahrul@gmail.com",
+        "foto": "sahrul.jpg"
+    },
+    {
+        "id": "3",
+        "nama": "Al El Dul",
+        "email": "-",
+        "foto": "aldulel.jpg"
+    },
+    {
+        "id": "4",
+        "nama": "Cicho Jericko",
+        "email": "cicho223@gmail.com",
+        "foto": "ciko2.jpg"
+    },
+    {
+        "id": "5",
+        "nama": "Fiersa Besari",
+        "email": "fiersaBesari@gmail.com",
+        "foto": "fiersaBesari.jpg"
+    },
+    {
+        "id": "6",
+        "nama": "Raline Shah",
+        "email": "raline123@gmail.com",
+        "foto": "raline.jpg"
+    }
+]

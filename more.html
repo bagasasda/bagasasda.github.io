@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Arah Langkah</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+
+</head>
+
+<body ng-app="">
+    <!-- start banner Area -->
+    <section class="banner-area" id="home">
+        <!-- Start Header Area -->
+        <header class="default-header" style="background-color: #000;">
+            <nav class="navbar navbar-expand-lg  navbar-light">
+                <div class="container" data-aos="fade-up">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white lnr lnr-menu"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end align-items-center"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="background-color: ;">
+                            <li><a href="index.html">Home</a></li>
+                            /<li><a href="about.html">About</a></li>
+                            /<li><a href="parallax.html">Service</a></li>
+                            /<li><a href="gallery.html">Gallery</a></li>
+                            /<li><a href="more.html">More</a></li>
+                            /
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header Area -->
+        <!-- Start about Area -->
+        <section class="section-gap info-area" id="about">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content pb-40 col-lg-8">
+                        <div data-aos="fade-up" class="title text-center">
+                            <h1 class="mb-10">More info about us</h1>
+                            <p>Who are in extremely love with eco friendly system.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="single-info row mt-40">
+                    <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+
+                        <form>
+                            Pick for see more:<br>
+                            <input type="radio" ng-model="myVar" value="dogs">Artis
+                            <input type="radio" ng-model="myVar" value="tuts">Mount
+                            <input type="radio" ng-model="myVar" value="cars">Forest
+                        </form>
+
+
+
+
+
+
+
+
+
+
+                        <div class="info-thumb" style="padding-top: 10%;">
+                            <img data-aos="fade-right" src="img/orang.png" class="img-fluid" alt="" style="width: 50%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                        <div class="info-content">
+                            <h2 data-aos="fade-up" class="pb-30">More ..</h2>
+                            <div ng-switch="myVar">
+                                <div ng-switch-when="dogs">
+                                    <h1>Artis</h1>
+                                    <table id="t1" style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>NO</th>
+                                                <th>Nama</th>
+                                                <th>Email</th>
+
+                                                <th>Foto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <div ng-switch-when="tuts">
+                                    <h1>Mount</h1>
+                                    <table id="t2" style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>NO</th>
+                                                <th>Nama</th>
+                                                <th>Lokasi</th>
+
+                                                <th>Foto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <div ng-switch-when="cars">
+                                    <h1>Forest</h1>
+                                    <table id="t3" style="width:100%" cellpadding="10px" cellspacing="10px" border="1">
+                                        <thead>
+                                            <tr>
+                                                <th>NO</th>
+                                                <th>Nama</th>
+                                                <th>Lokasi</th>
+
+                                                <th>Foto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <!-- <div class="datad">
+                                        <div>
+
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="jquery-3.4.1.js"></script>
+        <script>
+            $.getJSON("datax.json", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<tr>");
+                    items.push("<td id='" + key + "'>" + val.id + "</td>");
+                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
+                    items.push("<td id='" + key + "'>" + val.email + "</td>");
+
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("#t1");
+            });
+        </script>
+        <script>
+            $.getJSON("mount.json", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<tr>");
+                    items.push("<td id='" + key + "'>" + val.id + "</td>");
+                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
+                    items.push("<td id='" + key + "'>" + val.lokasi + "</td>");
+
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("#t2");
+            });
+        </script>
+        <script>
+            $.getJSON("forest.json", function (data) {
+                var items = [];
+                $.each(data, function (key, val) {
+                    items.push("<tr>");
+                    items.push("<td id='" + key + "'>" + val.id + "</td>");
+                    items.push("<td id='" + key + "'>" + val.nama + "</td>");
+                    items.push("<td id='" + key + "'>" + val.lokasi + "</td>");
+
+                    items.push("<td id='" + key + "' style='text-align:center'><img src='img/" + val.foto + "' style='height:100px;'></td>");
+                    items.push("</tr>");
+                });
+                $("<tbody/>", { "class": "mydata", html: items.join("") }).appendTo("#t3");
+            });
+        </script>
+        <script src="js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+            integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+            crossorigin="anonymous"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/jquery.counterup.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>AOS.init()</script>
+
+
+        <footer class="footer-area section-gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>About Us</h6>
+                            <p>
+                                Arah Langkah is Adventure, Tour, and Travel Organizer who are engaged in the
+                                adventure
+                                on
+                                the mountain especially mountain in Indonesia. But of course, Arah Langkah also
+                                offering
+                                other Indonesia’s beautiful tourist destinations, and aiming to go international
+                                in the
+                                near
+                                future.
+                            </p>
+                            <!-- sponsored. -->
+                            <p class="footer-text">Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> Sponsored & Media Partner
+
+                                by <br> <a href=# target="_blank">Net. |
+                                    Wonderfull Indonesia | Eiger | Tracker</a></p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
+                    </div>
+                    <div class="col-lg-5  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Newsletter</h6>
+                            <p>Stay update with our latest</p>
+                            <div class="" id="mc_embed_signup">
+
+                                <form target="_blank" novalidate="true"
+                                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                    method="get" class="form-inline">
+
+                                    <div class="d-flex flex-row">
+
+                                        <input class="form-control" name="EMAIL" placeholder="Enter Email"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
+                                            required="" type="email">
+
+
+                                        <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right"
+                                                aria-hidden="true"></i></button>
+                                        <div style="position: absolute; left: -5000px;">
+                                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                                type="text">
+                                        </div>
+
+                                        <!-- <div class="col-lg-4 col-md-4">
+                                                    <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
+                                                </div>  -->
+                                    </div>
+                                    <div class="info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                        <div class="single-footer-widget">
+                            <h6>Follow Us</h6>
+                            <p>Let us be social</p>
+                            <div class="footer-social d-flex align-items-center">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "nama": "Taman Nasional Komodo",
+        "lokasi": "Lombok",
+        "foto": "komodo.jpg"
+    },
+    {
+        "id": "2",
+        "nama": "Taman Nasional Waykambas",
+        "lokasi": "Jawa timur",
+        "foto": "WayKambas.jpg"
+    },
+    {
+        "id": "3",
+        "nama": "Taman Nasional Baluran",
+        "lokasi": "Bandung",
+        "foto": "baluran.jpg"
+    }
+]
