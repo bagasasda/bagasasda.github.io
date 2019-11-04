@@ -100,43 +100,43 @@
 
 
     <div class="ptext1">
-      <h1 class="p1" style="color: #fff;">Discover the Colorful World</h1>
+      <h1 class="p1" style="color: #fff;">Discover the Colorful World of Indonesia</h1>
       <span data-aos="fade-up" class="border1" style=" font-family:CaptainMarvel">
         TAKE YOUR TRIP
       </span>
       <p style="color:#fff; font-size:14px;"></p>
 
     </div>
-  </div> -->
+  </div>
 
 
-  <section class="section section-light" id="sesi-light">
-    <h2 data-aos="fade-up">THERE ARE 3 NEAREST TRIPS THAT WILL COME</h2>
+  <section class="col-md-xs" id="sesi-light" style="text-align: center;">
+    <h2 data-aos="fade-up" style="padding-top: 2em;">THERE ARE 3 NEAREST TRIPS THAT WILL COME</h2>
     <p data-aos="fade-up">
       3 Trip terdekat yang akan datang berada di bulan Desember dan January
     </p>
     <div class="row" style="padding-top:5rem;">
-      <div class="column2" style="background-color: transparent; line-height: 2em;">
+      <div class="col-lg-4" style="background-color: transparent; line-height: 2em;">
         <span data-aos="zoom-in-up" class="dot"><img src="img/alps.png" style="padding-top: 23%;"></span>
-        <h1 data-aos="zoom-in-up">Mount</h1>
+        <h1 data-aos="zoom-in-up" style="font-size: 18px;">Mount</h1>
 
       </div>
-      <div class="column2" style="background-color:transparent; line-height: 3em;">
+      <div class="col-lg-4" style="background-color:transparent; line-height: 3em;">
         <span data-aos="zoom-in-up" class="dot"><img src="img/forest.png" style="padding-top: 23%;"></span>
-        <h1 data-aos="zoom-in-up">Forest</h1>
+        <h1 data-aos="zoom-in-up" style="font-size: 18px;">Forest</h1>
 
 
 
       </div>
-      <div class="column2" style="background-color:transparent;">
+      <div class="col-lg-4" style="background-color:transparent;">
         <span data-aos="zoom-in-up" class="dot"><img src="img/his.png" style="padding-top: 23%;"></span>
-        <h1 data-aos="zoom-in-up">Guest?</h1>
+        <h1 data-aos="zoom-in-up" style="font-size: 18px;">Guest?</h1>
       </div>
     </div>
 
 
-    <div class="row" data-aos="fade-up">
-      <div class="column">
+    <div class="row" data-aos="fade-up" style="padding-top: 3em;">
+      <div class="col-md-4 col-sm-6">
         <div class="card">
           <img src="img/rinjani3.jpg" alt="Jane" style="width:100%">
           <div class="container2">
@@ -148,57 +148,58 @@
             <p><button onclick="document.getElementById('id01').style.display='block'" class="button">Daftar</button>
             </p>
 
-            <div id="id01" class="modal">
 
-              <form class="modal-content animate" action="kirim.php" method="post">
-                <div class="imgcontainer">
-                  <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                    title="Close Modal">&times;</span>
+
+          </div>
+          <div id="id01" class="modal" style="width: auto;">
+
+            <form class="modal-content animate" action="kirim.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                  title="Close Modal">&times;</span>
+              </div>
+
+              <div class="containerR" style="text-align: left;">
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Vita Rasya" required>
+
+                <label for="phonenumber"><i class="fa fa-phone"></i> Phone Number</label>
+                <input type="text" id="phonenumber" name="phonenumber" placeholder="+62 822 997 331 00" required>
+
+                <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+                <input type="text" id="email" name="email" placeholder="vitarsy@example.com" required>
+
+                <label for="domisili"><i class="fa fa-user"></i> Domisili</label>
+                <input type="text" id="domisili" name="domisili" placeholder="Jakarta" required>
+
+                <div class="form-group">
+                  <label for="subject">Alasan kamu ingin ikut dalam acara ini?</label>
+                  <textarea class="form-control" id="subject" rows="3"
+                    placeholder="Kita pengen banget tau kenapa kamu pengen banget ikut acara ini? Boleh ya diceritakan, karena ini salah satu yang mendasari kita milih kamu :)"></textarea>
                 </div>
 
-                <div class="containerR" style="text-align: left;">
-                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                  <input type="text" id="fname" name="fname" placeholder="Vita Rasya" required>
-
-                  <label for="phonenumber"><i class="fa fa-phone"></i> Phone Number</label>
-                  <input type="text" id="phonenumber" name="phonenumber" placeholder="+62 822 997 331 00" required>
-
-                  <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
-                  <input type="text" id="email" name="email" placeholder="vitarsy@example.com" required>
-
-                  <label for="domisili"><i class="fa fa-user"></i> Domisili</label>
-                  <input type="text" id="domisili" name="domisili" placeholder="Jakarta" required>
-
-                  <div class="form-group">
-                    <label for="subject">Alasan kamu ingin ikut dalam acara ini?</label>
-                    <textarea class="form-control" id="subject" rows="3"
-                      placeholder="Kita pengen banget tau kenapa kamu pengen banget ikut acara ini? Boleh ya diceritakan, karena ini salah satu yang mendasari kita milih kamu :)"></textarea>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="subject">Seberapa pedulinya kamu terhadap lingkungan</label>
-                    <textarea class="form-control" id="subject" rows="3"
-                      placeholder="Kita juga pengen tau, seberapa pedulinya kamu terhadap lingkungan, khususnya tentang plastik. Share ya! Dengan senang hati akan kita baca"></textarea>
-                  </div>
-
-                  <button type="submit">Register</button>
-                  <input type="submit" name="kirim" value="Kirim Pesan" />
+                <div class="form-group">
+                  <label for="subject">Seberapa pedulinya kamu terhadap lingkungan</label>
+                  <textarea class="form-control" id="subject" rows="3"
+                    placeholder="Kita juga pengen tau, seberapa pedulinya kamu terhadap lingkungan, khususnya tentang plastik. Share ya! Dengan senang hati akan kita baca"></textarea>
                 </div>
 
-                <div class="containerR" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn">Cancel</button>
+                <button type="submit" style="background-color: #000;">Register</button>
+                <!-- <input type="submit" name="kirim" value="Kirim Pesan" /> -->
+              </div>
+
+              <div class="containerR" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn">Cancel</button>
 
 
-                </div>
-              </form>
-            </div>
-
+              </div>
+            </form>
           </div>
         </div>
       </div>
 
-      <div class="column">
+      <div class="col-md-4 col-sm-6">
         <div class="card">
           <img src="img/dieng.jpg" alt="Mike" style="width:100%">
           <div class="container2">
@@ -261,7 +262,7 @@
           </div>
         </div>
       </div>
-      <div class="column">
+      <div class="col-md-4 col-sm-6">
         <div class="card">
           <img src="img/kawahijen.jpg" alt="John" style="width:100%">
           <div class="container2">
@@ -435,7 +436,7 @@
             <p>Stay update with our latest</p>
             <div class="" id="mc_embed_signup">
 
-              <form target="_blank" novalidate="true"
+              <!-- <form target="_blank" novalidate="true"
                 action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                 method="get" class="form-inline">
 
@@ -449,14 +450,14 @@
                       aria-hidden="true"></i></button>
                   <div style="position: absolute; left: -5000px;">
                     <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-                  </div>
+                  </div> -->
 
-                  <!-- <div class="col-lg-4 col-md-4">
+              <!-- <div class="col-lg-4 col-md-4">
                           <button class="bb-btn btn"><span class="lnr lnr-arrow-right"></span></button>
                         </div>  -->
-                </div>
+              <!-- </div>
                 <div class="info"></div>
-              </form>
+              </form> -->
             </div>
           </div>
         </div>
@@ -491,5 +492,34 @@
 <script src="js/main.js"></script>
 <script src="js/aos.js"></script>
 <script>AOS.init();</script>
+
+
+<style>
+  @media screen (max-width: 400px) {
+    .section-light {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+
+
+
+  @media (min-width: 401px) and (max-width: 600px) {
+    .aection-light {
+      width: 50% !important;
+      height: auto !important;
+      float: left;
+    }
+  }
+
+
+  @media (max-width: 600px; ) {
+    .modal {
+      height: auto !important;
+      width: auto !important;
+    }
+  }
+</style>
 
 </html>
